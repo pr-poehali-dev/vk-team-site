@@ -313,46 +313,67 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="border-none shadow-lg">
               <CardContent className="pt-8 pb-8">
-                <div className="flex gap-1 mb-4">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center text-white font-semibold">
+                    ГКГ
+                  </div>
+                  <div>
+                    <div className="font-semibold">Группа Компаний Гермес</div>
+                    <div className="text-xs text-muted-foreground">17 сентября 2025</div>
+                  </div>
+                </div>
+                <div className="flex gap-1 mb-3">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <Icon key={star} name="Star" className="text-yellow-400 fill-yellow-400" size={20} />
+                    <Icon key={star} name="Star" className="text-yellow-400 fill-yellow-400" size={16} />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  "Отличная работа! Закрыли 10 вакансий за 2 недели. Все кандидаты прошли испытательный срок."
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  ГК «Гермес» благодарит кадровое агентство «Вкоманде» за профессиональный и внимательный подход к подбору сотрудников.
                 </p>
-                <div className="font-semibold">Анна Петрова</div>
-                <div className="text-sm text-muted-foreground">HR-директор, ООО "Логистика+"</div>
               </CardContent>
             </Card>
 
             <Card className="border-none shadow-lg">
               <CardContent className="pt-8 pb-8">
-                <div className="flex gap-1 mb-4">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white font-semibold">
+                    DR
+                  </div>
+                  <div>
+                    <div className="font-semibold">Denis Rolomarchuk</div>
+                    <div className="text-xs text-muted-foreground">10 мая 2025</div>
+                  </div>
+                </div>
+                <div className="flex gap-1 mb-3">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <Icon key={star} name="Star" className="text-yellow-400 fill-yellow-400" size={20} />
+                    <Icon key={star} name="Star" className="text-yellow-400 fill-yellow-400" size={16} />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  "Профессиональный подход к подбору руководителя отдела продаж. Нашли идеального кандидата!"
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Очень быстро нашли нужного человека в команду. Всегда на связи, даже в выходные. Будем обращаться ещё 👍
                 </p>
-                <div className="font-semibold">Игорь Смирнов</div>
-                <div className="text-sm text-muted-foreground">Генеральный директор, ТД "Восток"</div>
               </CardContent>
             </Card>
 
             <Card className="border-none shadow-lg">
               <CardContent className="pt-8 pb-8">
-                <div className="flex gap-1 mb-4">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center text-white font-semibold">
+                    VH
+                  </div>
+                  <div>
+                    <div className="font-semibold">Vitaliy Hontov</div>
+                    <div className="text-xs text-muted-foreground">6 отзывов</div>
+                  </div>
+                </div>
+                <div className="flex gap-1 mb-3">
                   {[1, 2, 3, 4, 5].map((star) => (
-                    <Icon key={star} name="Star" className="text-yellow-400 fill-yellow-400" size={20} />
+                    <Icon key={star} name="Star" className="text-yellow-400 fill-yellow-400" size={16} />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-4">
-                  "HR-аудит помог нам оптимизировать процессы подбора и сократить время найма на 40%."
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  Качественно помогли найти сотрудника, во время составления портрета покопались в процессах компании и упростили некоторые из них.
                 </p>
-                <div className="font-semibold">Елена Козлова</div>
-                <div className="text-sm text-muted-foreground">Владелец, Сеть кафе "Прибой"</div>
               </CardContent>
             </Card>
           </div>
