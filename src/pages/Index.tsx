@@ -344,29 +344,29 @@ const Index = () => {
                   <Icon name="MapPin" className="mt-1 flex-shrink-0" size={24} />
                   <div>
                     <div className="font-semibold mb-1">Адрес</div>
-                    <div className="opacity-90">г. Владивосток, ул. Светланская, 105</div>
+                    <div className="opacity-90">Проспект 100-летия Владивостока, 38а, Первореченский район, Владивосток, 690048</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Icon name="Phone" className="mt-1 flex-shrink-0" size={24} />
                   <div>
                     <div className="font-semibold mb-1">Телефон</div>
-                    <div className="opacity-90">+7 (423) 234-56-78</div>
+                    <div className="opacity-90">+7-964-448-26-61</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Icon name="Mail" className="mt-1 flex-shrink-0" size={24} />
                   <div>
                     <div className="font-semibold mb-1">Email</div>
-                    <div className="opacity-90">info@vkomande.ru</div>
+                    <div className="opacity-90">hrvkomande@yandex.ru</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
                   <Icon name="Clock" className="mt-1 flex-shrink-0" size={24} />
                   <div>
                     <div className="font-semibold mb-1">Режим работы</div>
-                    <div className="opacity-90">Пн-Пт: 9:00 - 18:00</div>
-                    <div className="opacity-90">Сб-Вс: выходной</div>
+                    <div className="opacity-90">Сегодня с 09:00 до 19:00</div>
+                    <div className="opacity-90">Ежедневно</div>
                   </div>
                 </div>
               </div>
@@ -414,7 +414,18 @@ const Index = () => {
 
       <footer className="bg-secondary/5 py-8 px-4 border-t">
         <div className="container mx-auto text-center text-muted-foreground">
-          <p>© 2024 ВКоманде. Все права защищены.</p>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <p>© 2024 ВКоманде. Все права защищены.</p>
+            <div className="flex items-center gap-4">
+              <a href="https://hrvkomande.ru" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+                hrvkomande.ru
+              </a>
+              <a href="https://wa.me/79644482661" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors flex items-center gap-2">
+                <Icon name="MessageCircle" size={18} />
+                WhatsApp
+              </a>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
