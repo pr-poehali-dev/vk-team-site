@@ -60,7 +60,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://cdn.poehali.dev/files/161a09d8-e497-47b1-a9e6-ef8c0d4019cb.png" 
+                src="https://cdn.poehali.dev/projects/15c3271a-84fd-40b5-a279-366a0f5a23ea/files/11fdaf53-d627-4d64-8bf9-4a6c84363016.jpg" 
                 alt="Команда ВКоманде"
                 className="rounded-2xl shadow-2xl w-full"
               />
