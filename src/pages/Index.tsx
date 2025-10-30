@@ -60,7 +60,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://cdn.poehali.dev/projects/15c3271a-84fd-40b5-a279-366a0f5a23ea/files/de0309c6-af55-46a5-a0fd-ac05037eb01b.jpg" 
+                src="https://cdn.poehali.dev/files/161a09d8-e497-47b1-a9e6-ef8c0d4019cb.png" 
                 alt="Команда ВКоманде"
                 className="rounded-2xl shadow-2xl w-full"
               />
@@ -259,11 +259,13 @@ const Index = () => {
               </div>
             </div>
             <div>
-              <img 
-                src="https://cdn.poehali.dev/projects/15c3271a-84fd-40b5-a279-366a0f5a23ea/files/fcdeb6a3-3510-4f3e-b776-b5d13fcd45cd.jpg" 
-                alt="Офис ВКоманде"
-                className="rounded-2xl shadow-2xl w-full"
-              />
+              <div className="rounded-2xl shadow-2xl overflow-hidden bg-white">
+                <iframe 
+                  src="https://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A43.150764%2C%22lon%22%3A131.909529%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22vladivostok%22%7D%2C%22org%22%3A%2270000001101697075%22%7D"
+                  className="w-full h-[400px] border-0"
+                  title="Карта 2GIS"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -367,6 +369,15 @@ const Index = () => {
                     <div className="font-semibold mb-1">Режим работы</div>
                     <div className="opacity-90">Сегодня с 09:00 до 19:00</div>
                     <div className="opacity-90">Ежедневно</div>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <Icon name="Globe" className="mt-1 flex-shrink-0" size={24} />
+                  <div>
+                    <div className="font-semibold mb-1">Сайт</div>
+                    <a href="https://hrvkomande.ru" target="_blank" rel="noopener noreferrer" className="opacity-90 hover:opacity-100 underline">
+                      hrvkomande.ru
+                    </a>
                   </div>
                 </div>
               </div>
