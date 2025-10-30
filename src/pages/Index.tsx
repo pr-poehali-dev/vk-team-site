@@ -27,6 +27,9 @@ const Index = () => {
               <button onClick={() => scrollToSection('reviews')} className="text-sm font-medium hover:text-primary transition-colors">
                 Отзывы
               </button>
+              <button onClick={() => scrollToSection('map')} className="text-sm font-medium hover:text-primary transition-colors">
+                Маршрут
+              </button>
               <button onClick={() => scrollToSection('contacts')} className="text-sm font-medium hover:text-primary transition-colors">
                 Контакты
               </button>
@@ -259,14 +262,41 @@ const Index = () => {
               </div>
             </div>
             <div>
-              <div className="rounded-2xl shadow-2xl overflow-hidden bg-white">
-                <iframe 
-                  src="https://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A43.150764%2C%22lon%22%3A131.909529%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22vladivostok%22%7D%2C%22org%22%3A%2270000001101697075%22%7D"
-                  className="w-full h-[400px] border-0"
-                  title="Карта 2GIS"
-                />
-              </div>
+              <img 
+                src="https://cdn.poehali.dev/projects/15c3271a-84fd-40b5-a279-366a0f5a23ea/files/fcdeb6a3-3510-4f3e-b776-b5d13fcd45cd.jpg" 
+                alt="Офис ВКоманде"
+                className="rounded-2xl shadow-2xl w-full"
+              />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="map" className="py-20 bg-muted/30 px-4">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-secondary mb-4">Маршрут</h2>
+            <p className="text-lg text-muted-foreground">
+              Проспект 100-летия Владивостока, 38а, Первореченский район
+            </p>
+          </div>
+          <div className="rounded-2xl shadow-2xl overflow-hidden bg-white">
+            <iframe 
+              src="https://widgets.2gis.com/widget?type=firmsonmap&options=%7B%22pos%22%3A%7B%22lat%22%3A43.150764%2C%22lon%22%3A131.909529%2C%22zoom%22%3A16%7D%2C%22opt%22%3A%7B%22city%22%3A%22vladivostok%22%7D%2C%22org%22%3A%2270000001101697075%22%7D"
+              className="w-full h-[500px] border-0"
+              title="Карта 2GIS"
+            />
+          </div>
+          <div className="mt-8 text-center">
+            <a 
+              href="https://2gis.ru/vladivostok/firm/70000001101697075?m=131.909529%2C43.150764%2F18" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 text-primary hover:underline font-medium"
+            >
+              <Icon name="Navigation" size={20} />
+              Построить маршрут в 2GIS
+            </a>
           </div>
         </div>
       </section>
